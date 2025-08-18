@@ -1,2 +1,0 @@
-# Devolta
-Devolta Company Portfolio
