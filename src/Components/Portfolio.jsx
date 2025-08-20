@@ -7,7 +7,6 @@ import portfolio from "../Assets/portfolio.png";
 import Website from "./pages/Website";
 import Logo from "./pages/Logo";
 import { Graphic } from "./pages/Graphic";
-import Contactus from './Contactus/ContactUs';
 
 export const Portfolio = ({ showBanner = true }) => {
   const [activeSection, setActiveSection] = useState("website");
@@ -87,7 +86,6 @@ export const Portfolio = ({ showBanner = true }) => {
           {renderSection()}
         </div>
       </div>
-      <Contactus/>
     </div>
   );
 };
