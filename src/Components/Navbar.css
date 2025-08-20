@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: linear-gradient(rgb(6, 10, 92));
+  padding: 0 20px;
+  color: #fff;
+}
+
+.logo {
+  width: 200px;
+  margin-top: 5px;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.navlinks {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav {
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav:hover {
+  color: #f4a300;
+}
+
+/* Hamburger Icon */
+.hamburger {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  height: 100%;
+  width: 250px;
+  background: rgb(2, 6, 73);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+  transition: 0.3s ease-in-out;
+  z-index: 999;
+}
+
+.sidebar.open {
+  right: 0;
+}
+
+.close-btn {
+  font-size: 26px;
+  align-self: flex-end;
+  cursor: pointer;
+  color: #fff;
+}
+
+.sidebar .nav {
+  font-size: 18px;
+}
+
+/* Overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 998;
+}
+
+/* Responsive */
+@media (max-width:2000px) and (min-width: 1500px) {
+  .header {
+    padding: 0 10px;
+    height:8vh;
+  }
+
+  .navlinks {
+    gap: 50px;
+    margin-left: 200px;
+  }
+
+  .logo {
+    width: 250px;
+  }
+  .nav {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 1360px) and (min-width: 1023px) {
+  .header {
+    height: auto;
+  }
+
+  
+
+  .logo {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 1024px) {
+  .header {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .navlinks {
+    display: none;
+  }
+
+  .hamburger {
+    /* margin: auto; */
+    display: block;
+  }
+}
+
+@media (max-width: 468px) {
+  .logo {
+    width: 120px;
+  }
+
+  .sidebar {
+    width: 200px;
+  }
+  .hamburger{
+    margin-top: 5px;
+  }
+}

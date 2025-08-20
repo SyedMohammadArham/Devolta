@@ -1,0 +1,403 @@
+.portfolio-bg {
+    overflow-x: hidden;
+    width: 100%;
+    min-height: auto;
+    /* background-image: linear-gradient(rgb(2, 6, 73), rgba(28, 29, 63, 0.866)); */
+    background-image: linear-gradient(rgb(2, 6, 73));
+
+}
+
+/* ---------- Portfolio Section ---------- */
+.portfolio {
+    width: 100%;
+    position: relative;
+    padding-bottom: 100px;
+    z-index: 1;
+}
+
+/* ---------- Banner ---------- */
+.port-banner {
+    background: url('../Assets/background.jpg') no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 65vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.port-banner-wrap {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(1, 2, 22, 0.886), rgba(28, 29, 63, 0.866));
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* ---------- Banner Text ---------- */
+.portfolio-banner-info {
+    width: 60%;
+    text-align: center;
+}
+
+.portfolio-banner-info h1 {
+    color: white;
+    font-size: 8rem;
+    font-family: sans-serif;
+    text-shadow: 2px 2px 12px #f4a300;
+}
+
+/* ---------- Banner Character Image ---------- */
+.port-cher {
+    width: 30%;
+    margin-top: 10px;
+}
+
+.port-cher img {
+    width: 100%;
+}
+
+/* ---------- Info Section ---------- */
+.portfolio-info {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+.portfolio-info h1 {
+    color: white;
+    font-size: 5rem;
+    font-family: sans-serif;
+    transition: 0.3s ease;
+}
+
+.portfolio-info span {
+    color: #f4a300;
+    transition: 0.3s ease;
+}
+
+.portfolio-info h1:hover {
+    color: #f4a300;
+}
+
+.portfolio-info span:hover {
+    color: #fff;
+}
+
+.portfolio-info p {
+    color: white;
+    font-size: 1.4rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* ---------- Buttons Section ---------- */
+.portfolio-wrap {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-left: 300px;
+}
+
+.portfolio button {
+    padding: 8px 26px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #f4a300;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.5s ease;
+    border-radius: 20px;
+}
+
+.portfolio button:hover {
+    background-color: #fff;
+    color: #f4a300;
+}
+
+/* ---------- Animations ---------- */
+@keyframes fadeSlide {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ---------- Responsive ---------- */
+
+
+@media (max-width: 2000px) and (min-width: 1500px) {
+    .portfolio-banner-info h1 {
+        font-size: 15rem;
+        margin-left: 50px;
+    }
+
+    .port-cher {
+        width: 35%;
+        margin-top: 70px;
+    }
+
+    .portfolio-info h1 {
+        font-size: 9rem;
+    }
+
+    .portfolio-info p {
+        font-size: 3rem;
+    }
+
+    .portfolio-wrap {
+        margin-left: 500px;
+    }
+
+    .portfolio-wrap button {
+        padding: 16px 50px;
+        font-size: 27px;
+    }
+
+}
+
+
+@media (max-width:1360px) and (min-width: 1025px) {
+    .portfolio-banner-info h1 {
+        font-size: 8rem;
+    }
+
+    .port-cher {
+        width: 40%;
+        margin-top: 60px;
+    }
+
+    .portfolio-info h1 {
+        font-size: 5rem;
+    }
+
+    .portfolio-info p {
+        font-size: 1.5rem;
+    }
+
+    .portfolio-wrap {
+        margin-left: 350px;
+    }
+
+    .portfolio-wrap button {
+        padding: 10px 20px;
+        font-size: 18px;
+    }
+
+    .website-card {
+        width: 350px;
+    }
+
+    .website-grid {
+        margin-left: 10px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    }
+}
+
+/* 1024px and below */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .portfolio-banner-info h1 {
+        font-size: 7.5rem;
+        margin-left: 50px;
+    }
+
+    .port-cher {
+        width: 40%;
+    }
+    .port-cher img {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .portfolio-wrap {
+        margin-left: 250px;
+    }
+
+    .website-card {
+        width: 300px;
+    }
+
+    .website-grid {
+        margin-left: 40px;
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    }
+
+}
+
+/* 768px and below */
+@media (max-width: 768px) and (min-width: 426px) {
+    .port-banner {
+        height: 60vh;
+        padding: 40px 0;
+    }
+
+    .port-banner-wrap {
+        width: 100%;
+        display: flex;
+        text-align: center;
+        height: 60vh;
+    }
+
+
+    .portfolio-banner-info {
+        width: 100%;
+    }
+
+    .portfolio-banner-info h1 {
+        font-size: 5.5rem;
+        margin-left: -250px;
+        margin-top: 70px;
+    }
+
+    .port-cher {
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        margin-top: -70px;
+    }
+
+    .port-cher img {
+        width: 60%;
+        margin-left: 400px;
+        margin-top: -90px;
+    }
+
+    .portfolio-wrap {
+        margin-left: 0;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .portfolio-info h1 {
+        font-size: 4rem;
+        margin-top: 20px;
+    }
+}
+
+/* 425px and below */
+@media (max-width: 425px) and (min-width: 376px) {
+    .port-banner {
+        height: 40vh;
+    }
+
+    .port-banner-wrap {
+        height: 40vh;
+    }
+
+    .portfolio-banner-info h1 {
+        font-size: 3.2rem;
+        position: absolute;
+        margin-top: 60px;
+        margin-left: -60px;
+    }
+
+    .port-cher {
+        width: 90%;
+    }
+
+    .port-cher img {
+        width: 180px;
+        margin-left: 200px;
+        margin-top: 10px;
+    }
+
+    .portfolio-info h1 {
+        font-size: 3rem;
+    }
+
+    .portfolio-wrap {
+        width: 100%;
+        margin-left: 0px;
+        display: flex;
+    }
+}
+
+/* 375px and below */
+@media (max-width: 375px) and (min-width: 321px) {
+    .port-banner {
+        height: 40vh;
+    }
+
+    .port-banner-wrap {
+        height: 40vh;
+    }
+
+    .portfolio-banner-info h1 {
+        font-size: 3.1rem;
+    }
+
+    .portfolio-info p {
+        font-size: 0.9rem;
+    }
+
+    .port-cher img {
+        margin-top: 40px;
+        margin-left: -20px;
+        width: 150px;
+    }
+    .portfolio-info h1 {
+        font-size: 3rem;
+    }
+
+    .portfolio-wrap {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 30px;
+        display: flex;
+    }
+
+    .website-card {
+        margin-left: 0px;
+    }
+}
+
+/* 320px and below */
+@media (max-width: 320px) {
+    .port-banner {
+        height: 40vh;
+    }
+    .port-banner-wrap {
+        height: 40vh;
+    }
+    .port-cher img{
+        width: 150px;
+        margin-left: -30px;
+        margin-top: 50px;
+    }
+    .portfolio-wrap {
+        width: 100%;
+        margin: 20px 0px;
+    }
+
+    .portfolio-banner-info h1 {
+        font-size: 2.5rem;
+    }
+
+    .portfolio-info h1 {
+        font-size: 2.5rem;
+    }
+
+    .portfolio-info p {
+        font-size: 0.8rem;
+    }
+
+}
