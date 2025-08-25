@@ -220,6 +220,7 @@
     .port-cher {
         width: 40%;
     }
+
     .port-cher img {
         width: 100%;
         margin-top: 50px;
@@ -293,6 +294,44 @@
     }
 }
 
+@media (max-width: 425px) and (min-width: 413px) {
+    .port-banner {
+        height: 40vh;
+    }
+
+    .port-banner-wrap {
+        height: 40vh;
+    }
+
+    .portfolio-banner-info h1 {
+        font-size: 3.2rem;
+        position: absolute;
+        margin-top: 70px;
+        margin-left: 10px;
+    }
+
+    .port-cher {
+        width: 90%;
+    }
+
+    .port-cher img {
+        width: 200px;
+        margin-left: 260px;
+        margin-top: 100px;
+    }
+
+    .portfolio-info h1 {
+        font-size: 3rem;
+    }
+
+    .portfolio-wrap {
+        width: 100%;
+        margin-left: 0px;
+        display: flex;
+    }
+
+}
+
 /* 425px and below */
 @media (max-width: 412px) and (min-width: 376px) {
     .port-banner {
@@ -354,6 +393,7 @@
         margin-left: -20px;
         width: 150px;
     }
+
     .portfolio-info h1 {
         font-size: 3rem;
     }
@@ -375,14 +415,17 @@
     .port-banner {
         height: 40vh;
     }
+
     .port-banner-wrap {
         height: 40vh;
     }
-    .port-cher img{
+
+    .port-cher img {
         width: 170px;
         margin-left: -40px;
         margin-top: 100px;
     }
+
     .portfolio-wrap {
         width: 100%;
         margin: 20px 0px;
