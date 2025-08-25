@@ -396,14 +396,14 @@
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 360px) and (min-width: 320px) {
     .banner {
         height: 40vh;
     }
 
 
     .mid {
-        height: 22vh;
+        height: 20vh;
     }
 
     .mid img {
@@ -445,7 +445,7 @@
     }
 
     .banner::after {
-        top: 200px;
+        top: 250px;
     }
 }
 
