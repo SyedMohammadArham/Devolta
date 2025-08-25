@@ -295,19 +295,20 @@
     }
 }
 
-@media (max-width: 425px) and (min-width: 376px) {
+@media (max-width: 412px) and (min-width: 376px) {
     .banner {
         height: 50vh;
     }
 
 
     .mid {
-        height: 28vh;
+        width: 40%;
+        height: 18vh;
     }
 
     .mid img {
-        width: 200%;
-        margin-left: -10px;
+        width: 220%;
+        margin-left: -20px;
         margin-top: 0px;
     }
     .left {
@@ -342,7 +343,7 @@
     }
 
     .banner::after {
-        top: 240px;
+        top: 380px;
     }
 }
 
