@@ -22,7 +22,7 @@ export default function Footer() {
           <div className="footer-socials">
             <a href="https://www.instagram.com/devolta.inc?igsh=emp6eDU3NjAycXQ5"><FaInstagram /></a>
             <a href="https://www.facebook.com/share/1AsYNGnSnP/"><FaFacebookF /></a>
-            <a href="https://web.whatsapp.com/"><FaWhatsapp /></a>
+            <a href="https://api.whatsapp.com/send/?phone=%2B923245356726&text=Hello%21+I+would+like+to+get+in+touch+with+you.&type=phone_number&app_absent=0"><FaWhatsapp /></a>
           </div>
           <div className="footer-contact">
             <p><MdPhone /> +923245356726 <span>+923314151120</span></p>
