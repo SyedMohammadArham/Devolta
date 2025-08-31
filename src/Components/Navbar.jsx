@@ -17,6 +17,7 @@ const Navbar = () => {
         {/* Logo */}
         <div className="logo">
           <img src={logo} alt="Logo" />
+          <h1>Devolta</h1>
         </div>
 
         {/* Desktop Links */}

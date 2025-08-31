@@ -15,7 +15,10 @@ export default function Footer() {
     <footer className="footer" data-aos="fade-up">
       <div className="footer-content">
         <div className="footer-column logo-contact">
-          <img src={logo} alt="devolta Solutions" className="footer-logo" />
+          <div className="logo">
+            <img src={logo} alt="devolta Solutions" className="footer-logo" />
+            <h1>Devolta</h1>
+          </div>
           <div className="footer-socials">
             <a href="https://www.instagram.com/devolta.inc?igsh=emp6eDU3NjAycXQ5"><FaInstagram /></a>
             <a href="https://www.facebook.com/share/1AsYNGnSnP/"><FaFacebookF /></a>
