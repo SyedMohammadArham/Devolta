@@ -7,6 +7,7 @@ import portfolio from "../Assets/portfolio.png";
 import Website from "./pages/Website";
 import Logo from "./pages/Logo";
 import { Graphic } from "./pages/Graphic";
+import Shopify from './pages/Shopify';
 
 export const Portfolio = ({ showBanner = true }) => {
   const [activeSection, setActiveSection] = useState("website");
@@ -34,6 +35,8 @@ export const Portfolio = ({ showBanner = true }) => {
         return <Logo />;
       case "graphic":
         return <Graphic />;
+        case "shopify":
+          return <Shopify/>;
       default:
         return null;
     }
@@ -65,7 +68,7 @@ export const Portfolio = ({ showBanner = true }) => {
             className={activeSection === "website" ? "active" : ""} 
             onClick={() => handleSectionChange("website")}
           >
-            Web Sites
+            WebSites
           </button>
           <button 
             className={activeSection === "logo" ? "active" : ""} 
@@ -78,6 +81,10 @@ export const Portfolio = ({ showBanner = true }) => {
             onClick={() => handleSectionChange("graphic")}
           >
             Graphic Design
+          </button>
+          <button className={activeSection === "shopify" ? "active" : ""} 
+          onClick={() => handleSectionChange("shopify")}>
+            Shopify
           </button>
         </div>
 

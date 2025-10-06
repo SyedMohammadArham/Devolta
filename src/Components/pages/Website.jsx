@@ -7,12 +7,14 @@ import web1 from "../../Assets/web1.png";
 import web2 from "../../Assets/web2.png";
 import web3 from "../../Assets/web3.png";
 import web4 from "../../Assets/web4.png";
+import web5 from "../../Assets/web5.png";
 
 const Website = () => {
     const webdata = {
         websites: [
-            { img: web1, title: "Steelpack Website", link: "https://steelpack.ca/" },
+            { img: web1, title: "Transport website", link: "https://deliverologistics.com/" },
             { img: web3, title: "Restaurant Website", link: "https://mykaptaan.com/" },
+            { img: web5, title: "Transport weebsite", link: "https://www.alldayautotransport.com/"},
             { img: web2, title: "Ecommerce Website" },
             { img: web4, title: "Construction Website" }
         ]

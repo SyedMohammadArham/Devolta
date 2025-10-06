@@ -8,7 +8,10 @@ import {
   FaRobot,
   FaChartLine,
   FaBullhorn,
-  FaMobileAlt
+  FaMobileAlt,
+  FaShopify,
+  FaAmazon,
+  FaWordpress
 } from 'react-icons/fa';
 
 const services = [
@@ -59,7 +62,27 @@ const services = [
     title: 'SEO',
     description:
       'From scripting to shooting and final cut complete video production services that bring your vision to life.'
+  },
+  {
+    icon: <FaShopify size={40} className="icon" />,
+    title: 'Ecommerce Solutions',
+    description:
+      'Custom Shopify Store Design, Product Setup & Managment, Theme Customization, Payment Gateway Integration, Conversion-Focused Design,'
+  },
+  {
+    icon: <FaAmazon size={40} className="icon" />,
+    title: 'Amazon Listingl/NON Listing',
+    description:
+      "Optimized Product Titles & Descriptions,High-Quality Images & A+ Content,Keyword Research for Better Ranking,Review & Rating Optimization,Conversion-Focused Strategy."
+  },
+  {
+    icon: <FaWordpress size={40} className="icon" />,
+    title: 'WordPress Development',
+    description:
+      'Custom WordPress Design, Fast & Responsive Websites, SEO - Friendly Development, eCommerce Integration, Plugin Setup & Optimization, Ongoing Support & Maintenance.'
+
   }
+
 ];
 
 export default function ServicesSection() {

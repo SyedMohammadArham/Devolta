@@ -40,6 +40,8 @@
 
 .logo-card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 4px 15px #f4a300;
+
 }
 
 .logo-image {

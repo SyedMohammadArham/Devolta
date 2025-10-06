@@ -41,6 +41,9 @@ export default function Footer() {
             <li>Graphic Design</li>
             <li>Video Editing</li>
             <li>SEO</li>
+            <li>Amazon Listin/Non Listing</li>
+            <li>Wordpress</li>
+            <li>Shopify</li>
           </ul>
         </div>
 
