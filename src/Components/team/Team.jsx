@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-import img1 from "../../Assets/sheikh.jpeg";
 import img2 from "../../Assets/arham.jpeg";
 import img3 from "../../Assets/shahzaib.jpeg";
 
@@ -15,11 +14,6 @@ const Team = () => {
   }, []);
 
   const teamMembers = [
-    {
-      img: img1,
-      name: "Sheikh Ibrahim",
-      role: "Frontend Developer & Social Media Handler"
-    },
     {
       img: img2,
       name: "Syed Muhammad Arham",

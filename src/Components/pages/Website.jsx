@@ -14,7 +14,7 @@ const Website = () => {
         websites: [
             { img: web1, title: "Transport website", link: "https://deliverologistics.com/" },
             { img: web3, title: "Restaurant Website", link: "https://mykaptaan.com/" },
-            { img: web5, title: "Transport weebsite", link: "https://www.alldayautotransport.com/"},
+            { img: web5, title: "Transport website", link: "https://www.alldayautotransport.com/"},
             { img: web2, title: "Ecommerce Website" },
             { img: web4, title: "Construction Website" }
         ]

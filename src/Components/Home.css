@@ -216,7 +216,7 @@
 
 }
 
-@media (max-width: 1024px) and (min-width: 769px) {
+@media (max-width: 1024px) and (min-width: 913px) {
     .banner {
         height: 65vh;
     }
@@ -247,8 +247,57 @@
         top: 440px;
     }
 }
+@media (max-width: 912px) and (min-width: 854px) {
+    .banner {
+        height: 60vh;
+    }
 
-@media (max-width: 768px) and (min-width: 426px) {
+    .left {
+        width: 45%;
+    }
+
+    .left span {
+        font-size: 0.9rem;
+    }
+
+    .left h2 {
+        font-size: 2.8rem;
+    }
+
+    .mid {
+        height: 25vh;
+    }
+
+    .mid img {
+        width: 220%;
+        margin-left: -20px;
+        margin-top: -10px;
+    }
+
+    .banner::after {
+        top: 760px;
+    }
+    
+}
+@media (max-width:853px) and (min-width: 769px) {
+    .bk{
+        overflow-x: hidden;
+    }
+    .mid {
+        height: 26vh;
+        width: 55%;
+    }
+    .mid img {
+        width: 210%;
+        margin-left: -20px;
+        margin-top: -10px;
+    }
+    .banner::after{
+        top: 780px;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 541px) {
     .banner {
         flex-direction: column;
         text-align: center;
@@ -294,15 +343,64 @@
         /* adjust skew background position */
     }
 }
-@media (max-width: 425px) and (min-width: 413px) {
+@media (max-width: 540px) and (min-width: 431px) {
     .banner {
-        height: 50vh;
+        height: 60vh;
     }
 
+    .mid {
+        width: 60%;
+        height: 40vh;
+    }
+
+    .mid img {
+        width: 200%;
+        margin-top: 20px;
+    }
+    .left {
+        width: 50%;
+        text-align: center;
+        margin-left: 10px;
+    }
+
+    .left span {
+        font-size: 0.5rem;
+    }
+
+    .left h2 {
+        margin-top: 15px;
+        font-size: 1.5rem;
+    }
+
+    .left p {
+        margin-top: 15px;
+        font-size: 0.7rem;
+    }
+
+    .btn-link {
+        padding: 7px 7px;
+        font-size: 0.8rem;
+    }
+
+    .start-btn {
+        margin-top: 16px;
+        padding: 7px 7px;
+        font-size: 0.8rem;
+    }
+
+    .banner::after {
+        top: 400px;
+    }
+    
+}
+@media (max-width: 430px) and (min-width: 426px) {
+    .banner {
+        height: 55vh;
+    }
 
     .mid {
-        width: 40%;
-        height: 29vh;
+        width: 50%;
+        height: 20vh;
     }
 
     .mid img {
@@ -342,7 +440,59 @@
     }
 
     .banner::after {
-        top: 250px;
+        top: 450px;
+    }
+    
+}
+@media (max-width: 425px) and (min-width: 414px) {
+    .banner {
+        height: 50vh;
+    }
+
+
+    .mid {
+        width: 40%;
+        height: 20vh;
+    }
+
+    .mid img {
+        width: 220%;
+        margin-left: -20px;
+        margin-top: 0px;
+    }
+    .left {
+        width: 50%;
+        text-align: center;
+        margin-left: 10px;
+    }
+
+    .left span {
+        font-size: 0.4rem;
+    }
+
+    .left h2 {
+        margin-top: 15px;
+        font-size: 1.2rem;
+    }
+
+    .left p {
+        margin-top: 15px;
+        font-size: 0.5rem;
+    }
+
+    .btn-link {
+        padding: 5px 5px;
+        font-size: 0.6rem;
+    }
+
+    .start-btn {
+        margin-top: 16px;
+        padding: 5px 5px;
+        font-size: 0.6rem;
+    }
+
+    .banner::after {
+        top: 370px;
     }
 }
 
@@ -404,7 +554,7 @@
     }
 
     .mid {
-        height: 25vh;
+        height: 15vh;
     }
 
     .mid img {
@@ -443,12 +593,12 @@
         font-size: 0.6rem;
     }
     .banner::after {
-        top: 230px;
+        top: 330px;
         /* adjust skew background position */
     }
 }
 
-@media (max-width: 360px) and (min-width: 320px) {
+@media (max-width: 320px) {
     .banner {
         height: 40vh;
     }

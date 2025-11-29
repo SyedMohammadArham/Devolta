@@ -145,7 +145,7 @@
     
 }
 
-@media (max-width: 1024px) and (min-width: 769px) {
+@media (max-width: 1024px) and (min-width: 854px) {
     .back::before {
         margin-top: 20px;
         transform: skewY(2deg);
@@ -164,9 +164,22 @@
         font-size: 1.6rem;
     }
 }
+@media (max-width:853px) and (min-width: 769px) {
+    .back::after {
+        bottom: 670px;
+        transform: skewY(1.8deg);
+    }
+    .back::before {
+        margin-top: 10px;
+        transform: skewY(1.8deg);
+    }
+    .back img{
+        width: 120%;
+    }
+}
 
 /* ---------------------- 768px ---------------------- */
-@media (max-width: 768px) and (min-width: 426px) {
+@media (max-width: 768px) and (min-width: 541px) {
     .back {
         width: 100%;
         height: auto;
@@ -209,7 +222,48 @@
         margin-top: 10px;
     }
 }
+@media (max-width: 540px) and (min-width: 426px) {
+    .back {
+        width: 100%;
+        height: auto;
+        padding: 30px;
+        flex-direction: column;
+    }
 
+    .dn-left {
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    .dn-left img {
+        width: 80%;
+        height: auto;
+        margin: auto;
+    }
+
+    .dn-right {
+        width: 100%;
+        text-align: center;
+    }
+
+    .dn-right h1 {
+        font-size: 2.5rem;
+    }
+
+    .dn-right p {
+        font-size: 1.1rem;
+    }
+
+    .back::before {
+        margin-top: 20px;
+        transform: skewY(1.4deg);
+    }
+    .back::after {
+        bottom: 450px;
+        transform: skewY(1.4deg);
+    }
+    
+}
 /* ---------------------- 425px ---------------------- */
 @media (max-width: 425px) and (min-width: 376px) {
     .back {

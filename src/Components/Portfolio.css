@@ -211,7 +211,7 @@
 }
 
 /* 1024px and below */
-@media (max-width: 1024px) and (min-width: 769px) {
+@media (max-width: 1024px) and (min-width: 853px) {
     .portfolio-banner-info h1 {
         font-size: 7.5rem;
         margin-left: 50px;
@@ -242,6 +242,39 @@
 
     }
 
+}
+@media (max-width:853px) and (min-width: 769px) {
+    .portfolio-banner-info h1 {
+        font-size: 6.5rem;
+        margin-left: 20px;
+        margin-top: 100px;
+    }
+
+    .port-cher {
+        width: 35%;
+    }
+
+    .port-cher img {
+        width: 150%;
+        margin-top: 380px;
+        margin-left: -90px;
+    }
+
+    .portfolio-wrap {
+        margin-left: 150px;
+    }
+
+    .website-card {
+        width: 280px;
+    }
+
+    .website-grid {
+        margin-left: 20px;
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+    }
 }
 
 /* 768px and below */
