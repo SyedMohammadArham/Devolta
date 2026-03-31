@@ -1,131 +1,115 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useState } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 import './Services.css';
 import {
   FaLaptopCode,
   FaPaintBrush,
-  FaVideo,
-  FaPenNib,
-  FaRobot,
-  FaChartLine,
   FaBullhorn,
-  FaMobileAlt,
   FaShopify,
-  FaAmazon,
-  FaWordpress
 } from 'react-icons/fa';
+
+// Import your images
+import softwareDevImg from '../Assets/software-dev.jpeg';
+import creativeDesignImg from '../Assets/creative-design.jpeg';
+import marketingImg from '../Assets/marketing.jpeg';
+import ecommerceImg from '../Assets/ecommerce.jpeg';
 
 const services = [
   {
-    icon: <FaLaptopCode size={40} className="icon" />,
-    title: 'Web Development',
-    description:
-      'Building functional websites, creating online experiences through coding.'
+    icon: <FaLaptopCode />,
+    image: softwareDevImg,
+    title: 'Software Development',
+    description: 'Building functional websites, creating online experiences through coding. Custom software solutions tailored to your business needs.'
   },
   {
-    icon: < FaMobileAlt size={40} className="icon" />,
-    title: 'App Development',
-    description:
-      'Creating apps, designing functionality, developing for mobile platforms.'
+    icon: <FaPaintBrush />,
+    image: creativeDesignImg,
+    title: 'Creative/Design',
+    description: 'Visually striking designs for brands, ads, packaging, and digital platforms crafted to make a lasting impression.'
   },
   {
-    icon: <FaPaintBrush size={40} className="icon" />,
-    title: 'Graphic Design',
-    description:
-      'Visually striking designs for brands, ads, packaging, and digital platforms crafted to make a lasting impression.'
+    icon: <FaBullhorn />,
+    image: marketingImg,
+    title: 'Marketing',
+    description: 'Strategic content planning, posting, and audience engagement to grow your brand\'s online presence consistently.'
   },
   {
-    icon: <FaVideo size={40} className="icon" />,
-    title: 'Video Editing',
-    description:
-      'Professional video editing services to enhance your raw footage into polished, engaging content for any platform.'
-  },
-  {
-    icon: <FaPenNib size={40} className="icon" />,
-    title: 'Content Creation',
-    description:
-      'Authentic, high converting user generated content tailored for social media, ads, and product showcases.'
-  },
-  {
-    icon: <FaBullhorn size={40} className="icon" />,
-    title: 'Digital Marketing',
-    description:
-      'Strategic content planning, posting, and audience engagement to grow your brand’s online presence consistently.'
-  },
-  {
-    icon: <FaRobot size={40} className="icon" />,
-    title: 'Open Ai',
-    description:
-      'High-quality photography for products, events, or branding captured with creativity and precision.'
-  },
-  {
-    icon: <FaChartLine size={40} className="icon" />,
-    title: 'SEO',
-    description:
-      'From scripting to shooting and final cut complete video production services that bring your vision to life.'
-  },
-  {
-    icon: <FaShopify size={40} className="icon" />,
-    title: 'Ecommerce Solutions',
-    description:
-      'Custom Shopify Store Design, Product Setup & Managment, Theme Customization, Payment Gateway Integration, Conversion-Focused Design,'
-  },
-  {
-    icon: <FaAmazon size={40} className="icon" />,
-    title: 'Amazon Listingl/NON Listing',
-    description:
-      "Optimized Product Titles & Descriptions,High-Quality Images & A+ Content,Keyword Research for Better Ranking,Review & Rating Optimization,Conversion-Focused Strategy."
-  },
-  {
-    icon: <FaWordpress size={40} className="icon" />,
-    title: 'WordPress Development',
-    description:
-      'Custom WordPress Design, Fast & Responsive Websites, SEO - Friendly Development, eCommerce Integration, Plugin Setup & Optimization, Ongoing Support & Maintenance.'
-
+    icon: <FaShopify />,
+    image: ecommerceImg,
+    title: 'Ecommerce Development & Optimization',
+    description: 'Custom Shopify Store Design, Product Setup & Management, Theme Customization, Payment Gateway Integration.'
   }
-
 ];
 
 export default function ServicesSection() {
-  const cardsRef = useRef([]);
+  const [loadedImages, setLoadedImages] = useState({});
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('animate'); // add the CSS animation class
-            observer.unobserve(entry.target); // stop observing (so it's only once)
-          }
-        });
-      },
-      {
-        threshold: 0.2
-      }
-    );
-
-    cardsRef.current.forEach((el) => el && observer.observe(el));
-  }, []);
+  const handleImageLoad = (index) => {
+    setLoadedImages(prev => ({ ...prev, [index]: true }));
+  };
 
   return (
-    <div className="services-container">
-      <div className="service-info slide-animation slide-down">
-        <h1>Services</h1>
-        <p> We deliver custom digital solutions, from concept to deployment and beyond.</p>
-      </div>
-      <div className="services-grid">
-        {services.map((service, index) => (
-          <div
-            key={index}
-            className="service-card"
-            style={{ '--i': index }}
-            ref={(el) => (cardsRef.current[index] = el)}
+    <section className="services-section">
+      <div className="container">
+        <div className="section-header">
+          <h2>Our Services</h2>
+          <p>We deliver custom digital solutions, from concept to deployment and beyond.</p>
+        </div>
+
+        <div className="services-slider-wrapper">
+          <Swiper
+            modules={[Navigation, Pagination, Autoplay]}
+            spaceBetween={30}
+            slidesPerView={1}
+            navigation
+            pagination={{ clickable: true }}
+            autoplay={{
+              delay: 3000,
+              disableOnInteraction: false,
+              pauseOnMouseEnter: true,
+            }}
+            loop={true}
+            speed={800}
+            breakpoints={{
+              640: { slidesPerView: 1, spaceBetween: 20 },
+              768: { slidesPerView: 2, spaceBetween: 25 },
+              1024: { slidesPerView: 3, spaceBetween: 30 },
+            }}
+            className="services-slider"
           >
-            <div className="icon-container">{service.icon}</div>
-            <h3 className="service-title">{service.title}</h3>
-            <p className="service-description">{service.description}</p>
-          </div>
-        ))}
+            {services.map((service, index) => (
+              <SwiperSlide key={index}>
+                <div className={`service-card ${loadedImages[index] ? '' : 'loading'}`}>
+                  <div className="service-image-wrapper">
+                    <img
+                      src={service.image}
+                      alt={service.title}
+                      className="service-image"
+                      onLoad={() => handleImageLoad(index)}
+                      onError={(e) => {
+                        e.target.src = 'https://via.placeholder.com/400x300?text=Service+Image';
+                      }}
+                    />
+                    <div className="service-overlay">
+                      <div className="overlay-icon">
+                        {React.cloneElement(service.icon, { size: 48 })}
+                      </div>
+                    </div>
+                  </div>
+                  <div className="service-content">
+                    <h3 className="service-title">{service.title}</h3>
+                    <p className="service-description">{service.description}</p>
+                  </div>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
       </div>
-    </div>
+    </section>
   );
 }

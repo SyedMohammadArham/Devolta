@@ -2,7 +2,7 @@
 .faq-bg {
   width: 100%;
   height: auto;
-  background-color: #fff;
+  background: rgb(230, 241, 251);
   padding: 100px 50px;
 }
 
@@ -47,7 +47,7 @@
 
 /* FAQ items */
 .faq-section details {
-  background: rgb(2, 6, 73);
+  background: linear-gradient(135deg, #4892dd 0%, #d2d0d0 100%);
   border-radius: 10px;
   margin-bottom: 18px;
   overflow: hidden;
@@ -56,7 +56,7 @@
 }
 
 .faq-section details:hover {
-  background: rgb(16, 20, 99);
+  background: linear-gradient(135deg, #15508c 0%, #ada7c6 100%);
   transform: translateY(-2px);
   box-shadow: 0 4px 15px rgba(218, 165, 32, 0.15);
 }
@@ -68,7 +68,7 @@
   font-size: 1.15rem;
   font-weight: 500;
   position: relative;
-  color: goldenrod;
+  color: rgb(255, 213, 108);
   transition: color 0.3s ease;
 }
 
@@ -121,23 +121,29 @@ details[open] p {
     transform: translateY(0);
   }
 }
+
 /* ---------- Desktop Large ---------- */
 @media (max-width: 2000px) and (min-width: 1500px) {
   .faq-bg {
     padding: 80px 40px;
   }
+
   .faq-bg h2 {
     font-size: 7rem;
   }
+
   .faq-section {
     padding: 40px 25px;
   }
+
   .faq-section summary {
     font-size: 2.6rem;
   }
+
   .faq-section p {
     font-size: 2.4rem;
   }
+
   .faq-section summary::after {
     font-size: 2.6rem;
   }
@@ -148,9 +154,11 @@ details[open] p {
   .faq-bg {
     padding: 70px 30px;
   }
+
   .faq-bg h2 {
     font-size: 3rem;
   }
+
   .faq-section summary {
     font-size: 1.05rem;
   }
@@ -161,9 +169,11 @@ details[open] p {
   .faq-bg {
     padding: 60px 25px;
   }
+
   .faq-bg h2 {
     font-size: 2.6rem;
   }
+
   .faq-section {
     padding: 25px 15px;
   }
@@ -174,12 +184,15 @@ details[open] p {
   .faq-bg {
     padding: 50px 20px;
   }
+
   .faq-bg h2 {
     font-size: 2.2rem;
   }
+
   .faq-heading {
     font-size: 1.6rem;
   }
+
   .faq-section summary {
     font-size: 1rem;
   }
@@ -190,9 +203,11 @@ details[open] p {
   .faq-bg {
     padding: 40px 18px;
   }
+
   .faq-bg h2 {
     font-size: 2rem;
   }
+
   .faq-section summary {
     font-size: 0.95rem;
   }
@@ -203,12 +218,15 @@ details[open] p {
   .faq-bg {
     padding: 35px 15px;
   }
+
   .faq-bg h2 {
     font-size: 1.8rem;
   }
+
   .faq-heading {
     font-size: 1.4rem;
   }
+
   .faq-section summary {
     font-size: 0.9rem;
   }

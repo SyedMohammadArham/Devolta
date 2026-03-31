@@ -14,10 +14,10 @@
     align-items: center;
     flex-wrap: wrap;
     position: relative;
-    background: white;
+    background: rgb(230, 241, 251);
 }
 
-.back::before {
+/* .back::before {
     content: "";
     position: absolute;
     top: 88%;
@@ -27,9 +27,9 @@
     background-image: linear-gradient(rgb(2, 6, 73));
     transform: skewY(1.5deg);
     transform-origin: left;
-}
+} */
 
-.back::after {
+/* .back::after {
     content: "";
     position: absolute;
     bottom: 450px;
@@ -39,7 +39,7 @@
     background-image: linear-gradient(rgb(2, 6, 73));
     transform: skewY(1.8deg);
     transform-origin: left;
-}
+} */
 
 .dn-left {
     overflow: hidden;
@@ -58,12 +58,15 @@
 
 .dn-right h1 {
     font-size: 4rem;
-    color: rgb(2, 6, 73);
+    color: #f4a300;
 }
 
 .dn-right p {
     font-size: 2rem;
-    color: gray;
+    color: #000000;
+    text-align: start;
+    font-weight: 400;
+    /* max-width: 800px; */
 }
 
 

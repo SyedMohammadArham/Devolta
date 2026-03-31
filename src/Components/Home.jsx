@@ -4,7 +4,6 @@ import Services from "./Services";
 import middle from "../Assets/charactor.png";
 import { Portfolio } from "./Portfolio";
 import { Servicedown } from "./Servicedown";
-import ContactUs from "./Contactus/ContactUs";
 import { Link } from "react-router-dom";
 
 const Home = () => {
@@ -47,7 +46,6 @@ const Home = () => {
 
       <Servicedown />
       <Portfolio showBanner={false} />
-      <ContactUs />
     </div>
   );
 };
