@@ -6,7 +6,7 @@
 }
 
 .bk {
-    background-color: rgba(1, 1, 87, 0.483);
+    background: linear-gradient(135deg, #4892dd 0%, #ffffff 100%);
     width: 100%;
     overflow-x: hidden;
 }
@@ -19,7 +19,7 @@
     width: 100%;
 }
 
-.banner::after {
+/* .banner::after {
     content: '';
     position: absolute;
     top: 552px;
@@ -29,7 +29,7 @@
     transform: skewY(2deg);
     transform-origin: left;
     background-image: linear-gradient(rgb(2, 6, 73));
-}
+} */
 
 .info {
     position: absolute;
@@ -38,7 +38,7 @@
     transform: translate(-50%, -50%);
     color: white;
     text-align: center;
-    background-image: linear-gradient(rgba(1, 2, 22, 0.886), rgba(28, 29, 63, 0.866));
+    background-image: linear-gradient(rgba(83, 187, 247, 0.886), rgba(53, 98, 132, 0.866));
     width: 100%;
     height: 100%;
     display: flex;
@@ -247,6 +247,7 @@
         top: 440px;
     }
 }
+
 @media (max-width: 912px) and (min-width: 854px) {
     .banner {
         height: 60vh;
@@ -277,22 +278,26 @@
     .banner::after {
         top: 760px;
     }
-    
+
 }
+
 @media (max-width:853px) and (min-width: 769px) {
-    .bk{
+    .bk {
         overflow-x: hidden;
     }
+
     .mid {
         height: 26vh;
         width: 55%;
     }
+
     .mid img {
         width: 210%;
         margin-left: -20px;
         margin-top: -10px;
     }
-    .banner::after{
+
+    .banner::after {
         top: 780px;
     }
 }
@@ -338,11 +343,13 @@
         padding: 8px 8px;
         font-size: 1rem;
     }
+
     .banner::after {
         top: 480px;
         /* adjust skew background position */
     }
 }
+
 @media (max-width: 540px) and (min-width: 431px) {
     .banner {
         height: 60vh;
@@ -357,6 +364,7 @@
         width: 200%;
         margin-top: 20px;
     }
+
     .left {
         width: 50%;
         text-align: center;
@@ -391,8 +399,9 @@
     .banner::after {
         top: 400px;
     }
-    
+
 }
+
 @media (max-width: 430px) and (min-width: 426px) {
     .banner {
         height: 55vh;
@@ -408,6 +417,7 @@
         margin-left: -20px;
         margin-top: 0px;
     }
+
     .left {
         width: 50%;
         text-align: center;
@@ -442,8 +452,9 @@
     .banner::after {
         top: 450px;
     }
-    
+
 }
+
 @media (max-width: 425px) and (min-width: 414px) {
     .banner {
         height: 50vh;
@@ -460,6 +471,7 @@
         margin-left: -20px;
         margin-top: 0px;
     }
+
     .left {
         width: 50%;
         text-align: center;
@@ -512,6 +524,7 @@
         margin-left: -20px;
         margin-top: 0px;
     }
+
     .left {
         width: 50%;
         text-align: center;
@@ -562,6 +575,7 @@
         margin-left: 5px;
         margin-top: 20px;
     }
+
     .left {
         width: 50%;
         text-align: center;
@@ -592,6 +606,7 @@
         padding: 5px 5px;
         font-size: 0.6rem;
     }
+
     .banner::after {
         top: 330px;
         /* adjust skew background position */
@@ -613,6 +628,7 @@
         margin-left: -10px;
         margin-top: 20px;
     }
+
     .left {
         width: 50%;
         text-align: center;

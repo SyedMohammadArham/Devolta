@@ -5,8 +5,7 @@
     text-align: center;
     padding: 60px 20px;
     /* background: linear-gradient(135deg, rgb(2, 6, 73) 0%, rgba(28, 29, 63, 0.95) 100%); */
-    background-image: linear-gradient(rgb(2, 6, 73));
-
+    background: linear-gradient(135deg, #4892dd 0%, #d2d0d0 100%);
     color: #fff;
 }
 
@@ -159,12 +158,13 @@
     box-shadow: 0 6px 20px rgba(2, 6, 73, 0.4);
 }
 
-@media (max-width: 2000px ) and (min-width: 1500px) {
+@media (max-width: 2000px) and (min-width: 1500px) {
     .price-container {
         width: 100%;
         padding: 80px 20px;
         height: auto;
     }
+
     .price-container h2 {
         font-size: 8rem;
     }
@@ -176,16 +176,20 @@
     .price-card {
         width: 630px;
     }
+
     .price-card h2 {
         font-size: 5rem;
         font-weight: 900;
     }
+
     .price-card h1 {
         font-size: 3rem;
     }
+
     .bullets li {
         font-size: 2rem;
     }
+
     .bullets li::before {
         font-size: 2rem;
         margin-left: -10px;
@@ -266,8 +270,9 @@
         padding: 6px 15px;
         font-size: 0.9rem;
     }
-    
+
 }
+
 @media (max-width: 320px) {
     .price-container h2 {
         font-size: 1.5rem;
