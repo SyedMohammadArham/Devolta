@@ -1,68 +1,73 @@
 import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import "./Footer.css";
-import { FaInstagram, FaFacebookF, FaWhatsapp } from "react-icons/fa";
-import { MdEmail, MdLocationPin, MdPhone } from "react-icons/md";
-import logo from "../Assets/devolta.png";
+import logo from "../Assets/devolta.png"
 
-export default function Footer() {
+const Footer = () => {
   useEffect(() => {
-    AOS.init({ duration: 800, once: true }); // initialize AOS once with 800ms duration
+    // Initialize AOS if you want animations
+    if (window.AOS) {
+      window.AOS.init({ duration: 800, once: true });
+    }
   }, []);
 
   return (
     <footer className="footer" data-aos="fade-up">
-      <div className="footer-content">
-        <div className="footer-column logo-contact">
-          <div className="logo">
-            <img src={logo} alt="devolta Solutions" className="footer-logo" />
-            <h1>Devolta</h1>
+      <div className="footer-container">
+        {/* Left Section - Logo, Tagline, Contact */}
+        <div className="footer-section footer-brand">
+          <div className="footer-logo-area">
+            <div className="logo-icon"><img src={logo} alt="" /></div>
+            <h2 className="footer-logo-text">DEVOLTA</h2>
           </div>
-          <div className="footer-socials">
-            <a href="https://www.instagram.com/devolta.inc?igsh=emp6eDU3NjAycXQ5"><FaInstagram /></a>
-            <a href="https://www.facebook.com/share/1AsYNGnSnP/"><FaFacebookF /></a>
-            <a href="https://api.whatsapp.com/send/?phone=%2B923245356726&text=Hello%21+I+would+like+to+get+in+touch+with+you.&type=phone_number&app_absent=0"><FaWhatsapp /></a>
-          </div>
-          <div className="footer-contact">
-            <p><MdPhone /> +923245356726 <span>+923314151120</span></p>
-            <p><MdEmail /> devoltaa71@gmail.com</p>
-            <p><MdLocationPin /> Lahore Pakistan</p>
-          </div>
+          <p className="footer-tagline">
+            Design Your Success Like Never Before
+          </p>
+          <p className="footer-email-link">
+            Interested in working with us?<br />
+            <a href="mailto:sales@netversesolutions.com" className="email-link">
+              devoltaa71@gmail.com
+            </a>
+          </p>
         </div>
 
-        <div className="footer-column">
-          <h3>ALL SERVICES</h3>
-          <ul>
-            <li>Web Development</li>
-            <li>App Development</li>
-            <li>Digital Marketing</li>
-            <li>Content Creation</li>
-            <li>Graphic Design</li>
-            <li>Video Editing</li>
-            <li>SEO</li>
-            <li>Amazon Listin/Non Listing</li>
-            <li>Wordpress</li>
-            <li>Shopify</li>
+        {/* Quick Links Column */}
+        <div className="footer-section">
+          <h3 className="footer-heading">Quick Links</h3>
+          <ul className="footer-links">
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About Company</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
           </ul>
         </div>
 
-        <div className="footer-column">
-          <h3>ALL PAGES</h3>
-          <ul>
-            <li>Home</li>
-            <li>Services</li>
-            <li>Portfolio</li>
-            <li>About Us</li>
-          </ul>
+        
+        {/* Address & Hours Column */}
+        <div className="footer-section">
+          <h3 className="footer-heading">Address</h3>
+          <address className="footer-address">
+            Model Town K Block<br />
+            Lahore<br />
+            Pakistan
+          </address>
+          <div className="footer-hours">
+            <strong>Hours:</strong><br />
+            9.30am – 6.30pm<br />
+            Monday to Friday
+          </div>
         </div>
       </div>
 
+      {/* Bottom Copyright Bar */}
       <div className="footer-bottom">
-        <p>
-          Copyright © 2025 <span className="footer-highlight">Devolta.inc</span>. All Rights Reserved
-        </p>
+        <div className="footer-bottom-container">
+          <p className="copyright">
+            Copyright © 2025 Devolta.inc . All Rights Reserved.
+          </p>
+        </div>
       </div>
     </footer>
   );
-}
+};
+
+export default Footer;

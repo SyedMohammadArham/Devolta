@@ -3,7 +3,6 @@ import Team from './team/Team'
 import { Pricing } from "./Pricing/Pricing"
 import { Pricedn } from './Pricing/Pricedn'
 import  Faqs  from "./FAQs/Faqs"
-import ContactUs from './Contactus/ContactUs'
 
 const About = () => {
   return (
@@ -12,7 +11,6 @@ const About = () => {
       <Pricedn />
       <Pricing />
       <Faqs />
-      <ContactUs/>
     </div>
   )
 }
