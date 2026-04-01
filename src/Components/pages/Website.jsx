@@ -5,16 +5,14 @@ import './Website.css';
 
 import web1 from "../../Assets/web1.png";
 import web2 from "../../Assets/web2.png";
-import web3 from "../../Assets/web3.png";
 import web4 from "../../Assets/web4.png";
 import web5 from "../../Assets/web5.png";
 
 const Website = () => {
     const webdata = {
         websites: [
-            { img: web1, title: "Transport website", link: "https://deliverologistics.com/" },
-            { img: web3, title: "Restaurant Website", link: "https://mykaptaan.com/" },
-            { img: web5, title: "Transport website", link: "https://www.alldayautotransport.com/"},
+            { img: web1, title: "Transport Services", link: "https://deliverologistics.com/" },
+            { img: web5, title: "Transport Company", link: "https://www.alldayautotransport.com/"},
             { img: web2, title: "Ecommerce Website" },
             { img: web4, title: "Construction Website" }
         ]
@@ -28,8 +26,8 @@ const Website = () => {
         <div className="website-section">
             <h2 className="website-heading">Website <span>Projects</span></h2>
             <p className='web-disc'>
-                We design websites that do more than just look good – they work.
-                At Netverse Solutions, we blend aesthetics with functionality to create fast, responsive, and user-friendly websites.
+                We design websites that do more than just look good they work.
+                At Devolta, we blend aesthetics with functionality to create fast, responsive, and user-friendly websites.
             </p>
 
             <div className="website-grid slider">
