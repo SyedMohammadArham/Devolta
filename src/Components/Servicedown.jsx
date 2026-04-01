@@ -18,7 +18,7 @@ export const Servicedown = () => {
                 <h1>Innovating Digital Futures</h1>
                 <p>
                     We provide expert-driven, strategic digital development, ensuring
-                    high-performance web and app solutions that deliver tangible
+                    high performance web and app solutions that deliver tangible
                     business outcomes.
                 </p>
             </div>

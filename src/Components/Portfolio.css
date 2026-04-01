@@ -3,7 +3,9 @@
     width: 100%;
     min-height: auto;
     /* background-image: linear-gradient(rgb(2, 6, 73), rgba(28, 29, 63, 0.866)); */
-    background-image: linear-gradient(rgb(2, 6, 73));
+    /* background-image: linear-gradient(rgb(2, 6, 73)); */
+    background: linear-gradient(135deg, #4892dd 0%, #ffffff 100%);
+
 
 }
 
@@ -30,7 +32,7 @@
 .port-banner-wrap {
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(rgba(1, 2, 22, 0.886), rgba(28, 29, 63, 0.866));
+    background-image: linear-gradient(rgba(83, 187, 247, 0.765), rgba(53, 98, 132, 0.845));
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -243,6 +245,7 @@
     }
 
 }
+
 @media (max-width:853px) and (min-width: 769px) {
     .portfolio-banner-info h1 {
         font-size: 6.5rem;
